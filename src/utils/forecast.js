@@ -15,7 +15,7 @@ const forecast = (latitude, longitude, callback) => {
             const temperature = body.current ? body.current.temperature : 0
             const feelsLike = body.current ? body.current.feelslike : 0
             let forecastData = `${body.current.weather_descriptions[0]}. It is ${temperature} degrees out, but feels like ${feelsLike} degrees. `
-            forecastData += `The humidity is ${body.current.humidity} and the wind direction is towards ${body.current.wind_dir}.`
+            forecastData += `The humidity is ${body.current.humidity}% and the wind direction is towards ${body.current.wind_dir}.`
             const lastSeen = `Last updated at ${body.current.observation_time}`
             callback(undefined, {
                 temperature: temperature,
