@@ -17,3 +17,10 @@ Here are a few technologies that were used in order to implement Continuos Integ
 
 Here is link to the other repository consisiting of the Docker Image that has Jenkins running and is deployed on a GKE Cluster in GCP _(Google Cloud Platform)_ - [Jenkins-Docker](https://github.com/khanna98/jenkins-docker)
 
+The details for that project are available in the Presentation.md file in that repository.
+
+As of this project, it is equipped with the Github webhooks and Jenkins. So whenever a code is pushed or pulled from this repository, not only does it deploy and update the Github but also the Heroku app where it is hosted.
+
+1. Adding Webhook in Github Settings
+2. Configuring Jenkins Pipeline and updating it to run when github webhook post request is recieved.
+
