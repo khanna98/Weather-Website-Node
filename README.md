@@ -8,5 +8,3 @@ This is made using the following technologies:
 4. Postman
 
 This was deployed using Jenkins - which is running in a Docker Container deployed in a Kubernetes Cluster. I know this can sound confusing but the truth is it is.
-
-> INCEPTION
